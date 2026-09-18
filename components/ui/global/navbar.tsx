@@ -5,7 +5,7 @@ import { useTheme } from 'next-themes'
 import Image, { StaticImageData } from 'next/image'
 import Link from 'next/link'
 import assets from '@/src/assets/assets'
-import { Button, buttonVariants } from '@/components/ui/button'
+import { buttonVariants } from '@/components/ui/button'
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -295,61 +295,61 @@ const Navbar = ({
                     </SheetTrigger>
 
 
-                    <SheetContent className="overflow-y-auto">
+                    <SheetContent side='bottom' className="overflow-y-auto bg-transparent backdrop-blur-2xl rounded-t-3xl">
 
-                    <SheetHeader>
+                      <SheetHeader>
 
-                        <SheetTitle>
+                          <SheetTitle>
 
-                        <Link
-                            href={logo.url}
-                            className="flex items-center gap-2"
-                        >
+                          <Link
+                              href={logo.url}
+                              className="flex items-center gap-2"
+                          >
 
-                            <Image
-                            src={logoSrc}
-                            className={cn(
-                                'h-auto max-h-8 w-auto',
-                                logo.className
-                            )}
-                            alt={logo.alt}
-                            />
+                              <Image
+                              src={logoSrc}
+                              className={cn(
+                                  'h-auto max-h-8 w-auto',
+                                  logo.className
+                              )}
+                              alt={logo.alt}
+                              />
 
-                        </Link>
+                          </Link>
 
-                        </SheetTitle>
+                          </SheetTitle>
 
-                    </SheetHeader>
-
-
-                    <div className="flex flex-col gap-6 p-4">
+                      </SheetHeader>
 
 
-                        {/* Mobile Navigation */}
-
-                        <Accordion
-                          className="flex w-full flex-col gap-4"
-                        >
-                          {menu.map((item) => (
-                              renderMobileMenuItem(item)
-                          ))}
-                        </Accordion>
+                      <div className="flex flex-col gap-6 p-4">
 
 
-                        {/* Verification Button */}
-                        {buttons?.secondary && (
-                        <Link
-                            href={buttons.secondary.url}
-                                className={cn(
-                                    buttonVariants({ size: 'lg' }),
-                                )}
-                        >
-                            {buttons.secondary.text}
-                        </Link>
-                        )}
+                          {/* Mobile Navigation */}
+
+                          <Accordion
+                            className="flex w-full flex-col gap-4"
+                          >
+                            {menu.map((item) => (
+                                renderMobileMenuItem(item)
+                            ))}
+                          </Accordion>
 
 
-                    </div>
+                          {/* Verification Button */}
+                          {buttons?.secondary && (
+                          <Link
+                              href={buttons.secondary.url}
+                                  className={cn(
+                                      buttonVariants({ size: 'lg' }),
+                                  )}
+                          >
+                              {buttons.secondary.text}
+                          </Link>
+                          )}
+
+
+                      </div>
 
                     </SheetContent>
 
@@ -492,6 +492,7 @@ const renderMobileMenuItem = (item: MenuItem) => {
             font-sans
             font-semibold
             hover:no-underline
+            hover:text-blue-500
           "
         >
           {item.title}
@@ -503,7 +504,7 @@ const renderMobileMenuItem = (item: MenuItem) => {
               <Link
                 key={subItem.title}
                 href={subItem.url}
-                className="rounded-md px-3 py-2 text-sm font-medium transition-colors hover:bg-accent no-underline!"
+                className="rounded-md px-3 py-2 text-sm font-medium transition-colors hover:bg-blue-500/10 hover:border border-blue-500/50 no-underline!"
               >
                 {subItem.title}
               </Link>

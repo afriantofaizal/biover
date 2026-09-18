@@ -1,5 +1,6 @@
 'use client'
 
+import * as React from 'react'
 import { Button } from '@/components/ui/button'
 import {
   Field,
@@ -28,9 +29,10 @@ interface ContactInfo {
   href?: string
 }
 interface ContactBasicProps {
-    eyebrow?: string
-    title?: string
-    description?: string
+    eyebrow: string
+    heading: string
+    highlight: string
+    description: string
     contactInfo: ContactInfo[]
 }
 
@@ -40,7 +42,8 @@ type Props = Partial<ContactProps>
 
 const defaultProps: ContactBasicProps = {
     eyebrow: 'get in touch',
-    title: "Let’s build a world of instant trust.",
+    heading: "Let’s build a world of instant trust.",
+    highlight: 'instant trust.',
     description: 'Drop us a line, we will contact you within 24 hours',
     contactInfo: [
         {
@@ -62,7 +65,8 @@ const defaultProps: ContactBasicProps = {
 const Contact = (props: Props) => {
     const {
         eyebrow,
-        title,
+        heading,
+        highlight,
         description,
         contactInfo,
         } = {
@@ -147,8 +151,20 @@ const Contact = (props: Props) => {
 
                         {/* TITLE */}
                         <FadeUp controlled duration={0.8} distance={28} >
-                            <h1 className="max-w-5xl text-5xl font-semibold lg:text-6xl leading-tight text-pretty">
-                                {title}
+                            <h1 className="max-w-5xl text-4xl font-semibold lg:text-6xl leading-tight text-pretty">
+                                {highlight
+                                ? heading.split(highlight).map((part, index, parts) => (
+                                    <React.Fragment key={index}>
+                                    {part}
+
+                                    {index < parts.length - 1 && (
+                                        <span className="bg-linear-to-b from-blue-400 to-blue-600 bg-clip-text text-transparent">
+                                        {highlight}
+                                        </span>
+                                    )}
+                                    </React.Fragment>
+                                ))
+                                : heading}
                             </h1>
                         </FadeUp>
 

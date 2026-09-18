@@ -1,11 +1,13 @@
 'use client'
 
+import * as React from 'react'
 import { FadeUp, Stagger } from '@/components/motion/'
 
 interface HeroSolutionsBasicProps {
-    eyebrow?: string
-    heading?: string
-    description?: string
+    eyebrow: string
+    heading: string
+    highlight: string
+    description: string
 }
 
 interface HeroSolutionsProps extends HeroSolutionsBasicProps {}
@@ -14,7 +16,8 @@ type Props = Partial<HeroSolutionsProps>
 
 const defaultProps: HeroSolutionsProps = {
     eyebrow: 'solutions',
-    heading: "Explore our solutions",
+    heading: 'Explore our solutions',
+    highlight: 'our solutions',
     description: 'Biover global team of experts offers in-depth industry experience to deliver reliable biometric solutions. Our solutions have been deployed worldwide, addressing a wide range of use cases, from national ID management to supporting some of the largest law enforcement agencies. We also provide identity verification for global consumer brands. We understand your challenges and are committed to meeting your needs.',
 }
 
@@ -22,6 +25,7 @@ const HeroSolutions = (props: Props) => {
     const {
         eyebrow,
         heading,
+        highlight,
         description,
     } = {
         ...defaultProps,
@@ -57,9 +61,20 @@ const HeroSolutions = (props: Props) => {
 
                     {/* TITLE */}
                     <FadeUp controlled duration={0.8} distance={28} >
-                        <h1
-                            className="max-w-2xl text-5xl font-semibold lg:text-6xl leading-tight text-pretty">
-                            {heading}
+                        <h1 className="max-w-2xl text-4xl font-semibold lg:text-6xl leading-tight text-pretty">
+                            {highlight
+                            ? heading.split(highlight).map((part, index, parts) => (
+                                <React.Fragment key={index}>
+                                {part}
+
+                                {index < parts.length - 1 && (
+                                    <span className="bg-linear-to-b from-blue-400 to-blue-600 bg-clip-text text-transparent">
+                                    {highlight}
+                                    </span>
+                                )}
+                                </React.Fragment>
+                            ))
+                            : heading}
                         </h1>
                     </FadeUp>
 

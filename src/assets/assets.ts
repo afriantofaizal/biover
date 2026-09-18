@@ -1,7 +1,7 @@
 import logo_light from '@/src/assets/logo/biover-logo-light.webp'
 import logo_dark from '@/src/assets/logo/biover-logo-dark.webp'
 import biometric from '@/src/assets/global/biometric.webp'
-import about from '@/src/assets/global/about-biover.svg'
+import about from '@/src/assets/global/about-biover.webp'
 
 import biometric_registration_kit from '@/src/assets/products/biometric-registration-kit/biometric-registration-kit.webp'
 import biometric_registration_kit1 from '@/src/assets/products/biometric-registration-kit/biometric-registration-kit1.webp'
@@ -18,6 +18,7 @@ import afis_abis from '@/src/assets/products/afis-abis-for-criminal-investigatio
 import afis_abis1 from '@/src/assets/products/afis-abis-for-criminal-investigation/afis-abis1.webp'
 
 import super_biover_matcher88 from '@/src/assets/products/biover-matcher88/biover-matcher88.webp'
+import super_biover_matcher88_1 from '@/src/assets/products/biover-matcher88/biover-matcher88-1.webp'
 
 import super_biover_matcher42 from '@/src/assets/products/biover-matcher42/biover-matcher42.webp'
 import super_biover_matcher42_1 from '@/src/assets/products/biover-matcher42/biover-matcher42-1.webp'
@@ -53,6 +54,7 @@ const assets = {
     afis_abis1,
 
     super_biover_matcher88,
+    super_biover_matcher88_1,
 
     super_biover_matcher42,
     super_biover_matcher42_1,

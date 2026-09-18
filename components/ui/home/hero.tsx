@@ -2,11 +2,10 @@
 
 import * as React from 'react'
 import Link from 'next/link'
-import { buttonVariants } from '@/components/ui/button'
+import { Button } from '@/components/ui/button'
 import { GridPattern } from '@/components/ui/grid-pattern'
 import { Status, StatusIndicator } from '../status'
 import { IconArrowUpRight, IconChevronRight, IconBulb } from '@tabler/icons-react';
-import { cn } from '@/src/lib/utils'
 import { FadeUp, Stagger, } from '@/components/motion/'
  
 interface heroButton {
@@ -93,15 +92,15 @@ const Hero = (props: Props) => {
                   <Link href='/products/biometric-identification-kit'>
                     <Status
                         status="online"
-                        className='px-2 py-3 bg-accent/50'
+                        className='px-2 py-3 bg-accent/50 group-hover:border-blue-500/30'
                     >
                         <StatusIndicator />
                         <p className='text-sm'>
                             {badge.text}
                         </p>
-                        <span className='flex gap-1 text-sm text-muted-foreground items-center'>
+                        <span className='flex gap-1 text-sm text-muted-foreground items-center group-hover:text-foreground transition duration-300'>
                             • {badge.announcement}
-                            <IconArrowUpRight stroke={2} size={16} className='group-hover:text-blue-500 group-hover:translate-x-0.5 transition duration-300' />
+                            <IconArrowUpRight stroke={2} size={16} className='group-hover:text-blue-500 group-hover:rotate-45 transition duration-300' />
                         </span>
                     </Status>
                   </Link>
@@ -134,37 +133,43 @@ const Hero = (props: Props) => {
             </FadeUp>
 
             {/* === * BUTTONS * === */}
-            <FadeUp controlled duration={0.8} distance={40}>
-              <div className='flex w-full flex-col justify-center gap-4 sm:flex-row mt-10'>
+            <FadeUp
+              controlled
+              duration={0.8}
+              distance={40}
+              className="w-full"
+            >
+              <div className="mt-10 w-full">
+                <div className="flex w-full flex-col gap-4 sm:flex-row sm:justify-center">
 
                   {buttons?.primary && (
-                    <Link 
-                        href={buttons.primary.url}
-                        className={cn(
-                            buttonVariants
-                            ({ size: 'lg' }),
-                            'h-12 px-8'
-                          )}
+                    <Link
+                      href={buttons.primary.url}
+                      className="block w-full sm:w-auto"
                     >
+                      <Button className="h-12 w-full px-8 sm:w-auto">
                         {buttons.primary.text}
                         <IconChevronRight stroke={2} />
+                      </Button>
                     </Link>
                   )}
 
                   {buttons?.secondary && (
-                    <Link 
-                        href={buttons.secondary.url}
-                        className={cn(
-                        buttonVariants
-                        ({ size: 'lg', variant: 'outline' }),
-                        'h-12 px-8'
-                      )}
+                    <Link
+                      href={buttons.secondary.url}
+                      className="block w-full sm:w-auto"
                     >
-                      <IconBulb stroke={2} />
-                      {buttons.secondary.text}
+                      <Button
+                        variant="outline"
+                        className="h-12 w-full px-8 sm:w-auto"
+                      >
+                        <IconBulb stroke={2} />
+                        {buttons.secondary.text}
+                      </Button>
                     </Link>
                   )}
 
+                </div>
               </div>
             </FadeUp>
 

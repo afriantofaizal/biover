@@ -50,7 +50,7 @@ const HeroAfisAbis = (props: Props) => {
                 z-0
                 w-3/5
                 max-w-7xl
-                mask-l-from-80% mask-l-to-90% mask-b-from-0% mask-b-to-80%
+                mask-l-from-80% mask-l-to-90% mask-b-from-0% mask-b-to-80% mask-radial-from-0% mask-radial-to-90% mask-radial-at-right
                 "
             >
                 <Image

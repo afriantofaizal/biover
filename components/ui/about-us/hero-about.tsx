@@ -1,12 +1,11 @@
 'use client'
 
 import * as React from 'react'
-import { Button, buttonVariants } from '@/components/ui/button'
+import { Button } from '@/components/ui/button'
 import Link from 'next/link'
 import { IconBulb, IconMailShare } from '@tabler/icons-react';
 import { Separator } from "@/components/ui/separator"
-import { cn } from '@/src/lib/utils'
-import { FadeUp, Stagger, } from '@/components/motion/'
+import { FadeUp, Stagger } from '@/components/motion/'
 
 interface StatsItem {
     title: string
@@ -37,8 +36,8 @@ type Props = Partial<heroAboutProps>
 
 const defaultProps: heroAboutProps = {
     eyebrow: 'Trust through technology',
-    heading: 'Securing Global Identities with Uncompromising Precision',
-    highlight: 'Uncompromising Precision',
+    heading: 'Securing global identities with uncompromising precision',
+    highlight: 'uncompromising precision',
     description: 'BIOVER is an independent provider of trusted biometric solutions. We build secure, reliable, and highly scalable systems tailored for governments and modern enterprises worldwide.',
     buttons: {
         primary: {
@@ -90,7 +89,7 @@ const HeroAbout = (props: Props) => {
                     {/* === * HEADER * === */}
                     <Stagger 
                         stagger={0.25} delay={0.25} amount={0.3}
-                        className="mb-16 flex w-full flex-col items-start text-left"
+                        className="mb-32 flex w-full flex-col items-start text-left"
                     >
                         {/* EYEBROW */}
                         <FadeUp controlled duration={0.8} distance={40}>
@@ -112,7 +111,7 @@ const HeroAbout = (props: Props) => {
 
                         {/* === * TITLE + DESCRIPTION * === */}
                         <FadeUp controlled duration={0.9} distance={40}>
-                            <h1 className="max-w-5xl text-5xl font-semibold lg:text-6xl leading-tight text-pretty">
+                            <h1 className="max-w-5xl text-4xl font-semibold lg:text-6xl leading-tight text-pretty">
                                 {highlight
                                 ? heading.split(highlight).map((part, index, parts) => (
                                     <React.Fragment key={index}>
@@ -133,35 +132,27 @@ const HeroAbout = (props: Props) => {
                         </FadeUp>
 
                         {/* === * BUTTONS * === */}
-                        <FadeUp controlled duration={0.8} distance={40}>
-                            <div className='flex w-full flex-col gap-4 sm:flex-row mt-10'>
-                                {buttons?.primary && (
-                                <Link 
-                                    href={buttons.primary.url}
-                                    className={cn(
-                                        buttonVariants
-                                        ({ size: 'lg' }),
-                                        'h-12 px-8'
-                                        )}
-                                    >
-                                    {buttons.primary.text}
-                                    <IconBulb stroke={2} />
-                                </Link>
-                                        
-                                )}
-                                {buttons?.secondary && (
-                                <Link 
-                                    href={buttons.secondary.url}
-                                        className={cn(
-                                        buttonVariants
-                                        ({ size: 'lg', variant: 'outline' }),
-                                        'h-12 px-8'
+                        <FadeUp controlled duration={0.8} distance={40} className='w-full'>
+                            <div className="mt-10 w-full">
+                                <div className='flex w-full flex-col gap-4 sm:flex-row'>
+                                    {buttons?.primary && (
+                                    <Link href={buttons.primary.url} className="block w-full sm:w-auto">
+                                        <Button className='h-12 w-full px-8 sm:w-auto'>
+                                            {buttons.primary.text}
+                                            <IconBulb stroke={2} />
+                                        </Button>
+                                    </Link>
+                                            
                                     )}
-                                    >
-                                    {buttons.secondary.text}
-                                    <IconMailShare stroke={2} />
-                                </Link>
-                                )}
+                                    {buttons?.secondary && (
+                                    <Link href={buttons.secondary.url} className="block w-full sm:w-auto">
+                                        <Button className='h-12 w-full px-8 sm:w-auto' variant='outline'>
+                                            {buttons.secondary.text}
+                                            <IconMailShare stroke={2} />
+                                        </Button>
+                                    </Link>
+                                    )}
+                                </div>
                             </div>
                         </FadeUp>
 
@@ -172,7 +163,7 @@ const HeroAbout = (props: Props) => {
                         stagger={0.16}
                         delay={0.1}
                         amount={0.25}
-                        className="mx-auto mt-32 flex w-full flex-col gap-12 md:flex-row md:gap-0"
+                        className="pt-24 mx-auto flex w-full flex-col gap-12 md:flex-row md:gap-0"
                     >
                     {stats.map((item, index) => (
                         <FadeUp

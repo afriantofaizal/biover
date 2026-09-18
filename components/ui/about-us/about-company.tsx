@@ -50,12 +50,24 @@ const AboutCompany = (props: Props) => {
     return (
         <section className='relative overflow-hidden py-24 md:py-32'>
             <div className="mx-auto w-full max-w-7xl px-6 md:px-8 lg:px-12">
-                <div className="mx-auto flex flex-col gap-8 lg:flex-row items-center">
+                <div className="mx-auto flex flex-col gap-12 lg:flex-row items-center">
+
+                    {/* === * IMAGE * === */}
+                    <FadeIn
+                          duration={1.2} delay={0.2} amount={0.25}
+                          className='basis-1/3'
+                    >
+                        <Image
+                            src={image.src}
+                            alt={image.alt}
+                            priority
+                        />
+                    </FadeIn>
 
                     {/* === * HEADER * === */}
                     <Stagger
                         stagger={0.16} delay={0.05} amount={0.25}
-                       className="mb-16 flex w-full flex-col items-start text-left"
+                       className="basis-2/3 flex w-full flex-col items-start text-left"
                     >
 
                         {/* EYEBROW */}
@@ -80,9 +92,9 @@ const AboutCompany = (props: Props) => {
                         <FadeUp controlled duration={0.85} distance={32} >
                             <h3
                                 className="
-                                text-4xl
+                                text-3xl
                                 font-medium
-                                md:text-6xl
+                                md:text-5xl
                                 leading-tight
                                 "
                             >
@@ -122,17 +134,6 @@ const AboutCompany = (props: Props) => {
                         </Stagger>
                     </Stagger>
 
-                    {/* === * IMAGE * === */}
-                    <FadeIn
-                          duration={1.2} delay={0.2} amount={0.25}
-                        className='mx-auto justify-items-end'
-                    >
-                        <Image
-                            src={image.src}
-                            alt={image.alt}
-                            priority
-                        />
-                    </FadeIn>
                 </div>
             </div>
         </section>  

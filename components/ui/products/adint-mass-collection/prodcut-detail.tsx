@@ -90,21 +90,16 @@ const ProductAdintMassCollection = (props: Props) => {
 
                 {/* EYEBROW */}
                 <FadeUp controlled duration={0.7} distance={24} >
-                    <div className="mb-6 flex w-full flex-col items-start text-left">
-                        <div className="flex flex-col items-center gap-1.5">
-                            <span className="h-px w-46 bg-linear-to-r from-transparent via-blue-500 to-transparent translate-x-3" />
-                                <span
-                                    className="
-                                        text-lg
-                                        font-medium
-                                        uppercase
-                                        text-blue-500
-                                    "
-                                    >
-                                    Product Overview
-                                </span>
-                            <span className="h-px w-46 bg-linear-to-r from-transparent via-blue-500 to-transparent -translate-x-3" />
-                        </div>
+                    <div className="mb-6">
+                        <h4
+                            className="
+                                text-2xl
+                                font-semibold
+                                bg-linear-to-b from-blue-400 to-blue-600 bg-clip-text text-transparent
+                            "
+                            >
+                            Product Overview
+                        </h4>
                     </div>
                 </FadeUp>
 
@@ -130,7 +125,7 @@ const ProductAdintMassCollection = (props: Props) => {
                             src={product.image.src}
                             alt={product.image.alt}
                             priority
-                            className="h-auto w-full object-contain"
+                            className="h-auto w-full object-contain rounded-3xl"
                             sizes="(max-width: 1024px) 100vw, 50vw"
                         />
                     </div>

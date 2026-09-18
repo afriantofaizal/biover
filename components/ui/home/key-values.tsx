@@ -106,7 +106,7 @@ const ValuesSection = (props: Props) => {
 
                 {/* === * VALUE ITEMS * === */}
                 <Stagger 
-                    className="mx-auto mt-16 grid grid-cols-1 items-stretch gap-16 md:grid-cols-3 md:gap-12"
+                    className="mx-auto mt-24 grid grid-cols-1 items-stretch gap-16 md:grid-cols-3 md:gap-12"
                     stagger={0.2} delay={0.1} amount={0.2}
                 >
                     {items.map((item) => (

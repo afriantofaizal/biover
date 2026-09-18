@@ -31,7 +31,7 @@ type Props = Partial<ProductSuperBioverMatcher88Props>
 
 const defaultProduct: ProductSectionData = {
     image: {
-        src: assets.super_biover_matcher88,
+        src: assets.super_biover_matcher88_1,
         alt: 'Super Biover Matcher 8.8',
     },
     overview: 'Super Biover Matcher 8.8 represents the pinnacle of biometric matching technology, combining traditional minutiae-based algorithms with deep neural network matching for unprecedented accuracy. Features hardware-accelerated neural processing, real-time adaptive learning, and sub-millisecond response times for large-scale 1:N searches across multi-billion record databases.',
@@ -90,21 +90,16 @@ const ProductSuperBioverMatcher88 = (props: Props) => {
 
                 {/* EYEBROW */}
                 <FadeUp controlled duration={0.7} distance={24} >
-                    <div className="mb-6 flex w-full flex-col items-start text-left">
-                        <div className="flex flex-col items-center gap-1.5">
-                            <span className="h-px w-46 bg-linear-to-r from-transparent via-blue-500 to-transparent translate-x-3" />
-                                <span
-                                    className="
-                                        text-lg
-                                        font-medium
-                                        uppercase
-                                        text-blue-500
-                                    "
-                                    >
-                                    Product Overview
-                                </span>
-                            <span className="h-px w-46 bg-linear-to-r from-transparent via-blue-500 to-transparent -translate-x-3" />
-                        </div>
+                    <div className="mb-6">
+                        <h4
+                            className="
+                                text-2xl
+                                font-semibold
+                                bg-linear-to-b from-blue-400 to-blue-600 bg-clip-text text-transparent
+                            "
+                            >
+                            Product Overview
+                        </h4>
                     </div>
                 </FadeUp>
 
