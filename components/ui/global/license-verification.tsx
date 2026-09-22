@@ -32,9 +32,9 @@ interface LicenseVerificationProps extends LicenseVerificationBasicProps {}
 type Props = Partial<LicenseVerificationProps>
 
 const defaultProps: LicenseVerificationBasicProps = {
-    eyebrow: 'verification',
-    heading: "Certificate Verification",
-    description: 'Input your license key below and press check button to verification.',
+    eyebrow: 'product verification',
+    heading: 'Do you already own one of our products?',
+    description: 'Check the product license key you own below.',
     logo: {
         src: assets.logo_dark,
         alt: 'BIOVER',
@@ -64,7 +64,7 @@ const LicenseVerification = (props: Props) => {
         * CONTENT 
         * ===================================================== */}
         <div className='relative z-10 flex flex-col min-h-screen items-center justify-center px-6 md:px-8 lg:px-14 xl:px-20'>
-            <div className="mx-auto flex max-w-5xl flex-col gap-4 text-center">
+            <div className="mx-auto flex max-w-3xl flex-col gap-4 text-center">
 
                 {/* ===================================================== 
                 * HEADER 
@@ -76,7 +76,7 @@ const LicenseVerification = (props: Props) => {
                     {/* Eyebrow */}
                     <FadeUp controlled duration={0.7} distance={24} >
                         <div className="mb-6 flex flex-col items-center gap-1.5">
-                            <span className="h-px w-32 bg-linear-to-r from-transparent via-blue-500 to-transparent translate-x-3" />
+                            <span className="h-px w-48 bg-linear-to-r from-transparent via-blue-500 to-transparent translate-x-3" />
                                 <span
                                     className="
                                         text-lg
@@ -87,7 +87,7 @@ const LicenseVerification = (props: Props) => {
                                     >
                                     {eyebrow}
                                 </span>
-                            <span className="h-px w-32 bg-linear-to-r from-transparent via-blue-500 to-transparent -translate-x-3" />
+                            <span className="h-px w-48 bg-linear-to-r from-transparent via-blue-500 to-transparent -translate-x-3" />
                         </div>
                     </FadeUp>
 
@@ -100,6 +100,8 @@ const LicenseVerification = (props: Props) => {
                             tracking-tight
                             sm:text-4xl
                             md:text-5xl
+                            leading-tight
+                            text-pretty
                         "
                         >
                         {heading}
@@ -127,13 +129,13 @@ const LicenseVerification = (props: Props) => {
                 {/* ===================================================== 
                 * VERIFICATION FORM
                 * ===================================================== */}
-                <FadeUp duration={0.9} delay={0.35} distance={32} amount={0.25} className="w-full" >
+                <FadeUp duration={0.9} delay={0.35} distance={32} amount={0.25} className="w-full max-w-3xl mx-auto" >
                     <form className="mt-6">
                         <FieldSet>
                             <FieldGroup>
                                 <div className='flex gap-4'>
                                     <Field>
-                                        <Input className={cn('h-12 px-4 text-xl font-medium')} id='verification' type='text' placeholder='Enter license key...'  />
+                                        <Input className={cn('h-12 px-4 lg:text-lg font-medium')} id='verification' type='text' placeholder='Enter license key...'  />
                                     </Field>
                                     <Button
                                         type="submit"

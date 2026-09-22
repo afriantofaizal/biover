@@ -60,12 +60,12 @@ const ValuesSection = (props: Props) => {
 
                 {/* === * HEADER * === */}
                 <Stagger 
-                className="mx-auto w-full text-center"
+                className="mb-16 flex w-full flex-col items-center text-center"
                 stagger={0.18} delay={0.05} amount={0.3}>
 
                     {/* EYEBROW */}
                     <FadeUp controlled duration={0.7} distance={24} >
-                        <div className="mb-6 flex flex-col items-center justify-center gap-1.5">
+                        <div className="mb-6 flex flex-col items-center gap-1.5">
                             <span className="h-px w-32 bg-linear-to-r from-transparent via-blue-500 to-transparent translate-x-3" />
                                 <span
                                     className="
@@ -83,15 +83,7 @@ const ValuesSection = (props: Props) => {
 
                     {/* TITLE */}
                     <FadeUp controlled duration={0.8} distance={28} >
-                        <h2
-                            className="
-                            font-heading
-                            text-3xl
-                            font-medium
-                            sm:text-4xl
-                            md:text-5xl
-                            "
-                        >
+                        <h2 className="max-w-2xl text-4xl font-semibold lg:text-6xl leading-tight text-pretty">
                             {title}
                         </h2>
                     </FadeUp>

@@ -22,6 +22,16 @@ import {
   SheetTrigger,
 } from '@/components/ui/sheet'
 import {
+  Drawer,
+  DrawerClose,
+  DrawerContent,
+  DrawerDescription,
+  DrawerFooter,
+  DrawerHeader,
+  DrawerTitle,
+  DrawerTrigger,
+} from '@/components/ui/drawer'
+import {
   Accordion,
   AccordionContent,
   AccordionItem,
@@ -155,7 +165,7 @@ const Navbar = ({
 
   buttons= {
     secondary: {
-      text: 'License Verification',
+      text: 'Product verification',
       url: '/license-verification',
     },
   },
@@ -279,81 +289,70 @@ const Navbar = ({
 
                 {/* Mobile Menu */}
 
-                <Sheet>
+                <Drawer showSwipeHandle>
 
-                    <SheetTrigger
+                  <DrawerTrigger
+                    render={
+                      <button
                         className={cn(
-                        buttonVariants({
-                        variant: 'outline',
-                        size: 'icon',
-                        })
-                    )}
-                    >
+                          buttonVariants({
+                            variant: 'outline',
+                            size: 'icon',
+                          })
+                        )}
+                      />
+                    }
+                  >
+                    <IconMenu2 stroke={2} />
+                  </DrawerTrigger>
 
-                        <IconMenu2 stroke={2} />
+                  <DrawerContent className="bg-transparent backdrop-blur-2xl">
 
-                    </SheetTrigger>
+                    <DrawerHeader className='p-6'>
+                      <DrawerTitle>
+                        <Link
+                          href={logo.url}
+                          className="flex items-center gap-2"
+                        >
+                          <Image
+                            src={logoSrc}
+                            className={cn(
+                              'h-auto max-h-8 w-auto',
+                              logo.className
+                            )}
+                            alt={logo.alt}
+                          />
+                        </Link>
+                      </DrawerTitle>
+                    </DrawerHeader>
 
+                    <div className="flex-1 scroll-fade overflow-y-auto p-6">
 
-                    <SheetContent side='bottom' className="overflow-y-auto bg-transparent backdrop-blur-2xl rounded-t-3xl">
+                      <Accordion className="flex w-full flex-col gap-4">
+                        {menu.map((item) => (
+                          renderMobileMenuItem(item)
+                        ))}
+                      </Accordion>
 
-                      <SheetHeader>
+                    </div>
 
-                          <SheetTitle>
-
-                          <Link
-                              href={logo.url}
-                              className="flex items-center gap-2"
-                          >
-
-                              <Image
-                              src={logoSrc}
-                              className={cn(
-                                  'h-auto max-h-8 w-auto',
-                                  logo.className
-                              )}
-                              alt={logo.alt}
-                              />
-
-                          </Link>
-
-                          </SheetTitle>
-
-                      </SheetHeader>
-
-
-                      <div className="flex flex-col gap-6 p-4">
-
-
-                          {/* Mobile Navigation */}
-
-                          <Accordion
-                            className="flex w-full flex-col gap-4"
-                          >
-                            {menu.map((item) => (
-                                renderMobileMenuItem(item)
-                            ))}
-                          </Accordion>
-
-
-                          {/* Verification Button */}
-                          {buttons?.secondary && (
-                          <Link
-                              href={buttons.secondary.url}
-                                  className={cn(
-                                      buttonVariants({ size: 'lg' }),
-                                  )}
-                          >
-                              {buttons.secondary.text}
-                          </Link>
+                    <DrawerFooter>
+                      {buttons?.secondary && (
+                        <Link
+                          href={buttons.secondary.url}
+                          className={cn(
+                            buttonVariants({ size: 'lg' }),
+                            'mt-6 w-full'
                           )}
+                        >
+                          {buttons.secondary.text}
+                        </Link>
+                      )}
+                    </DrawerFooter>
 
+                  </DrawerContent>
 
-                      </div>
-
-                    </SheetContent>
-
-                </Sheet>
+                </Drawer>
 
                 </div>
 

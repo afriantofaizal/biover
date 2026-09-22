@@ -61,7 +61,9 @@ const Footer = ({
             links: [
                 { name: "Solutions", href: "/solutions" },
                 { name: "About Us", href: "/about-us" },
-                { name: "Contact", href: "/contact" },
+                { name: "Contact Sales", href: "/contact" },
+                { name: "Privacy Policy", href: "/privacy-policy" },
+                { name: "Terms of Use", href: "/terms-of-use" },
             ],
         },
     ],

@@ -100,7 +100,7 @@ const Hero = (props: Props) => {
                         </p>
                         <span className='flex gap-1 text-sm text-muted-foreground items-center group-hover:text-foreground transition duration-300'>
                             • {badge.announcement}
-                            <IconArrowUpRight stroke={2} size={16} className='group-hover:text-blue-500 group-hover:rotate-45 transition duration-300' />
+                            <IconArrowUpRight stroke={2} size={16} className='text-blue-500 group-hover:rotate-45 transition duration-300' />
                         </span>
                     </Status>
                   </Link>
