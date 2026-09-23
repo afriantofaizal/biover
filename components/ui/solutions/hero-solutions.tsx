@@ -33,7 +33,7 @@ const HeroSolutions = (props: Props) => {
     }
 
     return (
-        <section className="relative overflow-hidden py-32 md:py-48">
+        <section className="relative overflow-hidden pt-32 md:pt-48">
             <div className="mx-auto w-full max-w-7xl px-6 md:px-8 lg:px-12">
 
                 {/* === * HEADER * === */}

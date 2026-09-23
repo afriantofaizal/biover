@@ -5,7 +5,7 @@ import { useTheme } from 'next-themes'
 import Image, { StaticImageData } from 'next/image'
 import Link from 'next/link'
 import assets from '@/src/assets/assets'
-import { buttonVariants } from '@/components/ui/button'
+import { Button, buttonVariants } from '@/components/ui/button'
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -15,17 +15,9 @@ import {
   NavigationMenuTrigger,
 } from '@/components/ui/navigation-menu'
 import {
-  Sheet,
-  SheetContent,
-  SheetHeader,
-  SheetTitle,
-  SheetTrigger,
-} from '@/components/ui/sheet'
-import {
   Drawer,
   DrawerClose,
   DrawerContent,
-  DrawerDescription,
   DrawerFooter,
   DrawerHeader,
   DrawerTitle,
@@ -348,6 +340,7 @@ const Navbar = ({
                           {buttons.secondary.text}
                         </Link>
                       )}
+                      <DrawerClose render={<Button variant="outline">Close</Button>} />
                     </DrawerFooter>
 
                   </DrawerContent>
