@@ -103,12 +103,12 @@ const PrivacyPolicy = (props: Props) => {
                             1. Information We Collect
                         </h4>
 
-                        <p className="text-lg font-medium leading-relaxed">
+                        <p className="text-lg font-medium leading-relaxed text-muted-foreground">
                             We collect personal information that you voluntarily provide
                             to us through our website.
                         </p>
 
-                        <p className="text-lg font-medium leading-relaxed">
+                        <p className="text-lg font-medium leading-relaxed text-muted-foreground">
                             When you use our contact form, we may collect:
                         </p>
 
@@ -166,7 +166,7 @@ const PrivacyPolicy = (props: Props) => {
                             2. How We Use Personal Information
                         </h4>
 
-                        <p className="text-lg font-medium leading-relaxed">
+                        <p className="text-lg font-medium leading-relaxed text-muted-foreground">
                             We use the personal information submitted through our
                             website primarily to:
                         </p>
@@ -207,13 +207,13 @@ const PrivacyPolicy = (props: Props) => {
                             3. Contact Form Information
                         </h4>
 
-                        <p className="text-lg font-medium leading-relaxed">
+                        <p className="text-lg font-medium leading-relaxed text-muted-foreground">
                             When you submit information through our contact form, the
                             information is sent to our designated business or sales
                             email account for the purpose of responding to your inquiry.
                         </p>
 
-                        <p className="text-lg font-medium leading-relaxed">
+                        <p className="text-lg font-medium leading-relaxed text-muted-foreground">
                             We do not currently use a separate customer-facing account
                             system or public database through the website.
                         </p>
@@ -238,18 +238,18 @@ const PrivacyPolicy = (props: Props) => {
                             4. Biometric Information
                         </h4>
 
-                        <p className="text-lg font-medium leading-relaxed">
+                        <p className="text-lg font-medium leading-relaxed text-muted-foreground">
                             Biover provides biometric technologies and solutions for
                             various applications.
                         </p>
 
-                        <p className="text-lg font-medium leading-relaxed">
+                        <p className="text-lg font-medium leading-relaxed text-muted-foreground">
                             The existence of biometric products or solutions described
                             on this website does not mean that this website collects
                             biometric information from visitors.
                         </p>
 
-                        <p className="text-lg font-medium leading-relaxed">
+                        <p className="text-lg font-medium leading-relaxed text-muted-foreground">
                             We do not intentionally collect fingerprints, facial
                             biometric data, iris data, voice biometric data, or other
                             biometric identifiers from visitors through this website's
@@ -277,25 +277,25 @@ const PrivacyPolicy = (props: Props) => {
                             5. How We Share Personal Information
                         </h4>
 
-                        <p className="text-lg font-medium leading-relaxed">
+                        <p className="text-lg font-medium leading-relaxed text-muted-foreground">
                             We do not sell your personal information.
                         </p>
 
-                        <p className="text-lg font-medium leading-relaxed">
+                        <p className="text-lg font-medium leading-relaxed text-muted-foreground">
                             We may disclose personal information to service providers
                             or other parties when reasonably necessary to operate our
                             website, communicate with you, provide requested services,
                             maintain security, or comply with legal obligations.
                         </p>
 
-                        <p className="text-lg font-medium leading-relaxed">
+                        <p className="text-lg font-medium leading-relaxed text-muted-foreground">
                             For example, information submitted through our contact form
                             may be processed by email, hosting, infrastructure, or
                             other technology providers used to operate our website and
                             business communications.
                         </p>
 
-                        <p className="text-lg font-medium leading-relaxed">
+                        <p className="text-lg font-medium leading-relaxed text-muted-foreground">
                             We do not authorize third parties to use information
                             submitted through our contact form for their own independent
                             marketing purposes.
@@ -320,12 +320,12 @@ const PrivacyPolicy = (props: Props) => {
                             6. Cookies and Tracking Technologies
                         </h4>
 
-                        <p className="text-lg font-medium leading-relaxed">
+                        <p className="text-lg font-medium leading-relaxed text-muted-foreground">
                             Our website does not currently use analytics or advertising
                             cookies for tracking visitor behavior.
                         </p>
 
-                        <p className="text-lg font-medium leading-relaxed">
+                        <p className="text-lg font-medium leading-relaxed text-muted-foreground">
                             We may use technologies that are strictly necessary for the
                             operation, security, or delivery of the website.
                         </p>
@@ -348,7 +348,7 @@ const PrivacyPolicy = (props: Props) => {
                             7. Data Retention
                         </h4>
 
-                        <p className="text-lg font-medium leading-relaxed">
+                        <p className="text-lg font-medium leading-relaxed text-muted-foreground">
                             We retain personal information only for as long as reasonably
                             necessary to:
                         </p>
@@ -383,7 +383,7 @@ const PrivacyPolicy = (props: Props) => {
                             8. Data Security
                         </h4>
 
-                        <p className="text-lg font-medium leading-relaxed">
+                        <p className="text-lg font-medium leading-relaxed text-muted-foreground">
                             We take reasonable administrative, technical, and
                             organizational measures designed to protect personal
                             information against unauthorized access, disclosure,
@@ -409,13 +409,13 @@ const PrivacyPolicy = (props: Props) => {
                             9. International Data Transfers
                         </h4>
 
-                        <p className="text-lg font-medium leading-relaxed">
+                        <p className="text-lg font-medium leading-relaxed text-muted-foreground">
                             Biover operates internationally, with a Head Quarters in
                             Los Angeles, California, USA, and a Branch Office in
                             Singapore.
                         </p>
 
-                        <p className="text-lg font-medium leading-relaxed">
+                        <p className="text-lg font-medium leading-relaxed text-muted-foreground">
                             Depending on the nature of your interaction with us and the
                             service providers we use, your information may be accessed,
                             processed, or stored in countries other than the country in
@@ -440,12 +440,12 @@ const PrivacyPolicy = (props: Props) => {
                             10. Your Privacy Rights
                         </h4>
 
-                        <p className="text-lg font-medium leading-relaxed">
+                        <p className="text-lg font-medium leading-relaxed text-muted-foreground">
                             Depending on where you live and the laws that apply to you,
                             you may have rights regarding your personal information.
                         </p>
 
-                        <p className="text-lg font-medium leading-relaxed">
+                        <p className="text-lg font-medium leading-relaxed text-muted-foreground">
                             These rights may include the right to:
                         </p>
 
@@ -485,7 +485,7 @@ const PrivacyPolicy = (props: Props) => {
                             California Privacy Rights
                         </h5>
 
-                        <div className="space-y-4 text-lg font-medium leading-relaxed">
+                        <div className="space-y-4 text-lg font-medium leading-relaxed text-muted-foreground">
                             <p>
                                 If California privacy law applies to you and to Biover's
                                 processing of your personal information, you may have
@@ -511,7 +511,7 @@ const PrivacyPolicy = (props: Props) => {
                                 reasonably necessary to verify and process your request.
                             </p>
 
-                            <p className="text-muted-foreground">
+                            <p>
                                 We will not discriminate against you for exercising
                                 privacy rights available to you under applicable law.
                             </p>
@@ -529,12 +529,12 @@ const PrivacyPolicy = (props: Props) => {
                             11. Children's Privacy
                         </h4>
 
-                        <p className="text-lg font-medium leading-relaxed">
+                        <p className="text-lg font-medium leading-relaxed text-muted-foreground">
                             Our website is intended for business and professional
                             audiences.
                         </p>
 
-                        <p className="text-lg font-medium leading-relaxed">
+                        <p className="text-lg font-medium leading-relaxed text-muted-foreground">
                             We do not knowingly collect personal information from
                             children through the website.
                         </p>
@@ -557,12 +557,12 @@ const PrivacyPolicy = (props: Props) => {
                             12. Third-Party Websites
                         </h4>
 
-                        <p className="text-lg font-medium leading-relaxed">
+                        <p className="text-lg font-medium leading-relaxed text-muted-foreground">
                             Our website may contain links to third-party websites,
                             platforms, or services.
                         </p>
 
-                        <p className="text-lg font-medium leading-relaxed">
+                        <p className="text-lg font-medium leading-relaxed text-muted-foreground">
                             Those third-party websites operate independently from Biover
                             and may have their own privacy policies and terms of use.
                         </p>
@@ -586,13 +586,13 @@ const PrivacyPolicy = (props: Props) => {
                             13. Changes to This Privacy Policy
                         </h4>
 
-                        <p className="text-lg font-medium leading-relaxed">
+                        <p className="text-lg font-medium leading-relaxed text-muted-foreground">
                             We may update this Privacy Policy from time to time to
                             reflect changes in our business, website, technology, legal
                             requirements, or privacy practices.
                         </p>
 
-                        <p className="text-lg font-medium leading-relaxed">
+                        <p className="text-lg font-medium leading-relaxed text-muted-foreground">
                             When we make changes, we will update the Effective Date at
                             the beginning of this Privacy Policy.
                         </p>
@@ -614,7 +614,7 @@ const PrivacyPolicy = (props: Props) => {
                             14. Contact Us
                         </h4>
 
-                        <p className="text-lg font-medium leading-relaxed">
+                        <p className="text-lg font-medium leading-relaxed text-muted-foreground">
                             If you have questions about this Privacy Policy, our privacy
                             practices, or wish to submit a privacy-related request,
                             please contact us:

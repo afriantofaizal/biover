@@ -104,19 +104,19 @@ const TermsOfUse = (props: Props) => {
                             1. Use of the Website
                         </h4>
 
-                        <p className="text-lg font-medium leading-relaxed">
+                        <p className="text-lg font-medium leading-relaxed text-muted-foreground">
                             Biover provides this website for general informational
                             and business purposes, including providing information
                             about our company, products, solutions, technologies,
                             and services.
                         </p>
 
-                        <p className="text-lg font-medium leading-relaxed">
+                        <p className="text-lg font-medium leading-relaxed text-muted-foreground">
                             You may access and use the website only for lawful
                             purposes and in accordance with these Terms.
                         </p>
 
-                        <p className="text-lg font-medium leading-relaxed">
+                        <p className="text-lg font-medium leading-relaxed text-muted-foreground">
                             You agree not to:
                         </p>
 
@@ -160,18 +160,18 @@ const TermsOfUse = (props: Props) => {
                             2. Business and Product Information
                         </h4>
 
-                        <p className="text-lg font-medium leading-relaxed">
+                        <p className="text-lg font-medium leading-relaxed text-muted-foreground">
                             The information presented on this website is provided
                             for general informational and business purposes.
                         </p>
 
-                        <p className="text-lg font-medium leading-relaxed">
+                        <p className="text-lg font-medium leading-relaxed text-muted-foreground">
                             Product names, descriptions, specifications,
                             capabilities, images, technical information, and other
                             materials may be updated or changed from time to time.
                         </p>
 
-                        <p className="text-lg font-medium leading-relaxed">
+                        <p className="text-lg font-medium leading-relaxed text-muted-foreground">
                             The availability, configuration, functionality, and
                             performance of a product or solution may depend on the
                             specific deployment, customer requirements, technical
@@ -198,14 +198,14 @@ const TermsOfUse = (props: Props) => {
                             3. Intellectual Property
                         </h4>
 
-                        <p className="text-lg font-medium leading-relaxed">
+                        <p className="text-lg font-medium leading-relaxed text-muted-foreground">
                             Unless otherwise stated, the content and materials
                             available on this website are owned by or licensed to
                             Biover and are protected by applicable intellectual
                             property laws.
                         </p>
 
-                        <p className="text-lg font-medium leading-relaxed">
+                        <p className="text-lg font-medium leading-relaxed text-muted-foreground">
                             This may include, without limitation:
                         </p>
 
@@ -218,7 +218,7 @@ const TermsOfUse = (props: Props) => {
                             <li>- Software, code, and other technical materials.</li>
                         </ul>
 
-                        <p className="text-lg font-medium leading-relaxed">
+                        <p className="text-lg font-medium leading-relaxed text-muted-foreground">
                             You may view and access website content for your own
                             lawful informational or business purposes.
                         </p>
@@ -243,14 +243,14 @@ const TermsOfUse = (props: Props) => {
                             4. Trademarks
                         </h4>
 
-                        <p className="text-lg font-medium leading-relaxed">
+                        <p className="text-lg font-medium leading-relaxed text-muted-foreground">
                             Biover and other names, logos, product names, service
                             names, and marks displayed on this website may be
                             trademarks or service marks of Biover or their
                             respective owners.
                         </p>
 
-                        <p className="text-lg font-medium leading-relaxed">
+                        <p className="text-lg font-medium leading-relaxed text-muted-foreground">
                             Nothing on this website grants you any license or right
                             to use any trademark, service mark, logo, or other
                             proprietary mark without the prior written permission
@@ -269,18 +269,18 @@ const TermsOfUse = (props: Props) => {
                             5. Contact Form and Communications
                         </h4>
 
-                        <p className="text-lg font-medium leading-relaxed">
+                        <p className="text-lg font-medium leading-relaxed text-muted-foreground">
                             The website may provide a contact form that allows you
                             to submit inquiries, business requests, partnership
                             proposals, or other communications to Biover.
                         </p>
 
-                        <p className="text-lg font-medium leading-relaxed">
+                        <p className="text-lg font-medium leading-relaxed text-muted-foreground">
                             You agree that information you provide through the
                             contact form will be accurate and not misleading.
                         </p>
 
-                        <p className="text-lg font-medium leading-relaxed">
+                        <p className="text-lg font-medium leading-relaxed text-muted-foreground">
                             Submission of an inquiry does not create a contractual
                             relationship, agency relationship, partnership, joint
                             venture, employment relationship, or other formal
@@ -307,20 +307,20 @@ const TermsOfUse = (props: Props) => {
                             6. Biometric Technologies and Solutions
                         </h4>
 
-                        <p className="text-lg font-medium leading-relaxed">
+                        <p className="text-lg font-medium leading-relaxed text-muted-foreground">
                             Biover develops and provides biometric technologies and
                             solutions that may be used in government, financial,
                             identity, security, and other environments.
                         </p>
 
-                        <p className="text-lg font-medium leading-relaxed">
+                        <p className="text-lg font-medium leading-relaxed text-muted-foreground">
                             Information about biometric technologies presented on
                             this website is intended to describe the capabilities
                             and potential applications of Biover's products and
                             solutions.
                         </p>
 
-                        <p className="text-lg font-medium leading-relaxed">
+                        <p className="text-lg font-medium leading-relaxed text-muted-foreground">
                             The website itself does not provide biometric
                             identification or authentication services to website
                             visitors.
@@ -347,12 +347,12 @@ const TermsOfUse = (props: Props) => {
                             7. Third-Party Links and Services
                         </h4>
 
-                        <p className="text-lg font-medium leading-relaxed">
+                        <p className="text-lg font-medium leading-relaxed text-muted-foreground">
                             The website may contain links to websites, platforms,
                             products, or services operated by third parties.
                         </p>
 
-                        <p className="text-lg font-medium leading-relaxed">
+                        <p className="text-lg font-medium leading-relaxed text-muted-foreground">
                             These links are provided for convenience or informational
                             purposes and do not necessarily constitute an endorsement,
                             sponsorship, or recommendation by Biover.
@@ -378,13 +378,13 @@ const TermsOfUse = (props: Props) => {
                             8. Disclaimer of Warranties
                         </h4>
 
-                        <p className="text-lg font-medium leading-relaxed">
+                        <p className="text-lg font-medium leading-relaxed text-muted-foreground">
                             To the maximum extent permitted by applicable law, the
                             website and its content are provided on an "as is" and
                             "as available" basis.
                         </p>
 
-                        <p className="text-lg font-medium leading-relaxed">
+                        <p className="text-lg font-medium leading-relaxed text-muted-foreground">
                             Biover does not represent or warrant that:
                         </p>
 
@@ -427,7 +427,7 @@ const TermsOfUse = (props: Props) => {
                             9. Limitation of Liability
                         </h4>
 
-                        <p className="text-lg font-medium leading-relaxed">
+                        <p className="text-lg font-medium leading-relaxed text-muted-foreground">
                             To the maximum extent permitted by applicable law,
                             Biover and its affiliates, officers, directors,
                             employees, representatives, and service providers will
@@ -437,7 +437,7 @@ const TermsOfUse = (props: Props) => {
                             the website.
                         </p>
 
-                        <p className="text-lg font-medium leading-relaxed">
+                        <p className="text-lg font-medium leading-relaxed text-muted-foreground">
                             This includes, without limitation, losses arising from
                             interruption of service, loss of data, loss of business
                             opportunities, loss of profits, or reliance on
@@ -462,7 +462,7 @@ const TermsOfUse = (props: Props) => {
                             10. Indemnification
                         </h4>
 
-                        <p className="text-lg font-medium leading-relaxed">
+                        <p className="text-lg font-medium leading-relaxed text-muted-foreground">
                             To the extent permitted by applicable law, you agree to
                             defend, indemnify, and hold harmless Biover and its
                             affiliates, officers, directors, employees, and
@@ -499,12 +499,12 @@ const TermsOfUse = (props: Props) => {
                             11. Website Availability and Changes
                         </h4>
 
-                        <p className="text-lg font-medium leading-relaxed">
+                        <p className="text-lg font-medium leading-relaxed text-muted-foreground">
                             Biover may modify, suspend, restrict, or discontinue any
                             part of the website at any time, with or without notice.
                         </p>
 
-                        <p className="text-lg font-medium leading-relaxed">
+                        <p className="text-lg font-medium leading-relaxed text-muted-foreground">
                             We may also modify, update, remove, or replace website
                             content, product information, features, or services from
                             time to time.
@@ -528,14 +528,14 @@ const TermsOfUse = (props: Props) => {
                             12. Privacy
                         </h4>
 
-                        <p className="text-lg font-medium leading-relaxed">
+                        <p className="text-lg font-medium leading-relaxed text-muted-foreground">
                             Your use of this website is also subject to our Privacy
                             Policy, which explains how Biover collects, uses, and
                             protects personal information submitted through the
                             website.
                         </p>
 
-                        <p className="text-lg font-medium leading-relaxed">
+                        <p className="text-lg font-medium leading-relaxed text-muted-foreground">
                             By using the website, you acknowledge that you have had
                             the opportunity to review our Privacy Policy.
                         </p>
@@ -552,13 +552,13 @@ const TermsOfUse = (props: Props) => {
                             13. Governing Law
                         </h4>
 
-                        <p className="text-lg font-medium leading-relaxed">
+                        <p className="text-lg font-medium leading-relaxed text-muted-foreground">
                             These Terms are governed by and construed in accordance
                             with the laws of the State of California, United States,
                             without regard to its conflict of laws principles.
                         </p>
 
-                        <p className="text-lg font-medium leading-relaxed">
+                        <p className="text-lg font-medium leading-relaxed text-muted-foreground">
                             To the extent permitted by applicable law, disputes
                             arising out of or relating to these Terms or your use of
                             the website will be subject to the applicable courts
@@ -583,13 +583,13 @@ const TermsOfUse = (props: Props) => {
                             14. Changes to These Terms
                         </h4>
 
-                        <p className="text-lg font-medium leading-relaxed">
+                        <p className="text-lg font-medium leading-relaxed text-muted-foreground">
                             Biover may update or modify these Terms from time to time
                             to reflect changes in our website, business practices,
                             services, technology, or applicable legal requirements.
                         </p>
 
-                        <p className="text-lg font-medium leading-relaxed">
+                        <p className="text-lg font-medium leading-relaxed text-muted-foreground">
                             When changes are made, we will update the Effective Date
                             displayed at the beginning of these Terms.
                         </p>
@@ -612,7 +612,7 @@ const TermsOfUse = (props: Props) => {
                             15. Severability
                         </h4>
 
-                        <p className="text-lg font-medium leading-relaxed">
+                        <p className="text-lg font-medium leading-relaxed text-muted-foreground">
                             If any provision of these Terms is determined to be
                             invalid, unlawful, or unenforceable, that provision will
                             be enforced to the maximum extent permitted by law, and
@@ -632,7 +632,7 @@ const TermsOfUse = (props: Props) => {
                             16. Entire Agreement
                         </h4>
 
-                        <p className="text-lg font-medium leading-relaxed">
+                        <p className="text-lg font-medium leading-relaxed text-muted-foreground">
                             These Terms, together with the Privacy Policy and any
                             other policies or notices expressly incorporated by
                             reference, constitute the terms governing your use of the
@@ -658,7 +658,7 @@ const TermsOfUse = (props: Props) => {
                             17. Contact Us
                         </h4>
 
-                        <p className="text-lg font-medium leading-relaxed">
+                        <p className="text-lg font-medium leading-relaxed text-muted-foreground">
                             If you have questions about these Terms or the use of
                             this website, please contact us:
                         </p>
